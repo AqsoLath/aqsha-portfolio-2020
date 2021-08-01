@@ -1,0 +1,295 @@
+:root{
+	--ungu: #8739f9;
+	--pink: #c651cd;
+	--hitam: #363636;
+
+
+	--bg-black1: #100f10;
+	--bg-black2: #1b1b1b;
+	--bg-black3: #242424;
+
+	--font-white1: #ffffff;
+	--font-white2: #ffffffb2;
+	--font-white3: #ffffff72;
+
+	--font-sedang: 2.5rem;
+
+	--poppins: 'poppins', sans-serif;
+	--coba: 'play', sans-serif;
+
+}
+
+*{
+	/*display: none;*/
+	/*border: 1px solid red;*/
+}
+
+.navbar{
+	background-color: var(--bg-black1);
+	color: var(--pink) !important;
+	font-family: anton, sans-serif;
+	font-style: italic;
+	letter-spacing: 2px;
+}
+
+body{
+	background-color: var(--bg-black3);
+}
+
+.utama{
+	padding: 40px;
+	background-color: var(--bg-black1);
+	border-radius: 20px;
+	color: var(--font-white1);
+	margin-top: 20px;
+	font-family: var(--poppins);
+}
+
+.utama img{
+	width: 75%;
+	max-width: 400px;
+	text-align: center;
+	border-radius: 20px;
+	border: 2px solid var(--ungu);
+}
+
+.utama p{
+	color: var(--font-white2);
+}
+
+.logo{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	font-size: 50px;
+	text-decoration: none;
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+.utama a{
+	font-size: 2rem;
+	color: var(--pink);
+}
+
+.skills{
+	padding: 40px;
+	background-color: var(--bg-black1);
+	border-radius: 20px;
+	color: var(--font-white1);
+	margin-top: 20px;
+	font-family: var(--poppins);
+}
+
+.skills h2{
+	font-size: var(--font-sedang);
+	font-family: var(--coba);
+	/*font-weight: bold;*/
+/*	text-decoration: underline;
+	text-decoration-color: var(--ungu)*/
+}
+
+.skills h3{
+	font-family: var(--coba);
+}
+
+hr{
+	/*font-weight: 4px;*/
+	opacity: 1;
+	color: var(--pink);
+	/*width: 300px;*/
+	height: 4px;
+
+	/*margin: 5px auto 20px;*/
+}
+
+.skill{
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+}
+
+.skill h3{
+	display: block;
+}
+
+.skills ul li{
+	list-style: none;
+}
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--pink); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 20px; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.projects  {
+	padding: 40px;
+	background-color: var(--bg-black1);
+	border-radius: 20px;
+	color: var(--font-white1);
+	margin-top: 20px;
+	font-family: var(--poppins);
+}
+
+.projects h2{
+	font-size: var(--font-sedang);
+	font-family: var(--coba)
+}
+
+.projects .card{
+	background-color: transparent;
+	border: 2px solid var(--ungu);
+	border-radius: 15px;
+
+	/*width: 50%;*/
+}
+
+.card img{
+	border-radius: inherit;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom: 2px solid var(--pink);
+}
+
+.card h3{
+	font-size: 1.5rem;
+}
+
+.card h3, .card p{
+	color: var(--font-white1);
+	font-family: 'K2D', sans-serif;
+	/*text-shadow: 1px 1px 0px #fff;*/
+}
+
+.card p{
+	line-height: 16px;
+}
+
+.card .tombol{
+	background-color: var(--bg-black3);
+	color: var(--font-white2);
+	/*background-color: var(--ungu);*/
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 10px;
+	border: 1px solid var(--pink);
+
+	margin-top: 10px;
+	transition: .5s;
+
+}
+
+.card .tombol:hover{
+	color: var(--font-white2);
+	background-color: var(--pink);
+}
+
+.tengah {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.jarak {
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	background-color: var(--bg-black1);
+	margin-top: 50px;
+	padding-top: 20px;
+
+}
+
+footer h4{
+	color: var(--font-white2)
+}
+
+.social-media a{
+	text-decoration: none;
+	color: var(--pink);
+	font-size: 2rem;
+
+}
+
+footer .about p{
+	color: var(--font-white3);
+}
+
+footer p{
+	color: var(--font-white3)
+}
+
+footer hr{
+	color: var(--ungu);
+}
+
+
+@media (max-width: 480px ){
+	.projects .card{
+		width: 100%;
+	}
+}
+
+@media (max-width: 992px){
+	.logo{
+		bottom: 0;
+		left: 50%;
+		transform: 
+	}
+}
+
+
+/*<div class="projects container">
+      <div class="row text-center mb-2"><h2>My Projects</h2></div>
+      <div class="row tengah mb-3">
+        <div class="col-lg-6 ">
+          <div class="card  mx-auto">
+            <img src="image/personal.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Personal Website</h3>
+              <p class="card-text">A website that contains information about someone. Can be a photographer, an editor, or a programmer </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-3 jarak ">
+        <div class="col-lg-6">
+          <div class="card  mx-auto ">
+            <img src="image/online-shop.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>AxoLath's footwear</h3>
+              <p class="card-text">An online store that contains products name, price, picture etc </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card  mx-auto">
+            <img src="image/company.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>Metro Group</h3>
+              <p class="card-text">A company website that contains some information about the company</p>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class="row tengah">
+        <div class="col-lg-6 ">
+          <div class="card  mx-auto">
+            <img src="image/dynamic.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3>SMK 3 Peduli corona</h3>
+              <p class="card-text">A website that fetches data form api. Also to inform people about something </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div*/
