@@ -8,14 +8,15 @@
 	--bg-black2: #1b1b1b;
 	--bg-black3: #242424;
 
-	--font-white1: #ffffff;
-	--font-white2: #ffffffb2;
+	--font-white1: #ffffffea;
+	--font-white2: #ffffffb9;
 	--font-white3: #ffffff72;
 
 	--font-sedang: 2.5rem;
 
 	--poppins: 'poppins', sans-serif;
-	--coba: 'play', sans-serif;
+	--play: 'play', sans-serif;
+	--k2d: 'k2d', sans-serif;
 
 }
 
@@ -53,6 +54,10 @@ body{
 	border: 2px solid var(--ungu);
 }
 
+.utama h1{
+	font-family: var(--k2d);
+}
+
 .utama p{
 	color: var(--font-white2);
 }
@@ -85,14 +90,14 @@ body{
 
 .skills h2{
 	font-size: var(--font-sedang);
-	font-family: var(--coba);
+	font-family: var(--k2d);
 	/*font-weight: bold;*/
 /*	text-decoration: underline;
 	text-decoration-color: var(--ungu)*/
 }
 
 .skills h3{
-	font-family: var(--coba);
+	font-family: var(--k2d);
 }
 
 hr{
@@ -140,7 +145,7 @@ ul li::before {
 
 .projects h2{
 	font-size: var(--font-sedang);
-	font-family: var(--coba)
+	font-family: var(--k2d)
 }
 
 .projects .card{
@@ -163,8 +168,8 @@ ul li::before {
 }
 
 .card h3, .card p{
-	color: var(--font-white1);
-	font-family: 'K2D', sans-serif;
+	color: var(--font-white2);
+	font-family: var(--k2d);
 	/*text-shadow: 1px 1px 0px #fff;*/
 }
 
@@ -179,7 +184,7 @@ ul li::before {
 	text-decoration: none;
 	padding: 5px 15px;
 	border-radius: 10px;
-	border: 1px solid var(--pink);
+	border: 1px solid var(--ungu);
 
 	margin-top: 10px;
 	transition: .5s;
@@ -200,6 +205,44 @@ ul li::before {
 .jarak {
 	display: flex;
 	justify-content: center;
+}
+
+.contact{
+	padding: 40px;
+	background-color: var(--bg-black1);
+	border-radius: 20px;
+	color: var(--font-white1);
+	margin-top: 20px;
+}
+
+.contact h2{
+	font-family: var(--k2d);
+	font-size: var(--font-sedang);
+
+}
+
+.contact h3{
+	color: var(--font-white1);
+}
+
+.contact a{
+	color: var(--font-white2);
+	text-decoration: none;
+}
+
+.contact i{
+	color: var(--pink);
+	font-size: 2.5rem;
+}
+
+.contact .fa-whatsapp{
+	color: lightgreen;
+}
+
+.contact-info{
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer{
@@ -237,13 +280,17 @@ footer hr{
 	.projects .card{
 		width: 100%;
 	}
+
+	.contact .whatsapp{
+		font-size: 20px;
+	}
 }
 
 @media (max-width: 992px){
 	.logo{
 		bottom: 0;
 		left: 50%;
-		transform: 
+		transform: translateX(-50%);
 	}
 }
 
