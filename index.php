@@ -55,7 +55,7 @@
         </div>  
         <div class="col-lg-6 my-auto ">
           <h1 class="text-center">I'm Aqsha Lathif Imron</h1>
-          <p>I've studied web development for 10 month. If you are interested in creating a website using my services, please contact me via whatsapp or instagram DM. I will do my best for your website.</p>
+          <p>I've studied web development for 10 months. If you are interested in creating a website using my services, please contact me via whatsapp or instagram DM. I will do my best for your website.</p>
           <div class="logo text-center">
             <a href="https://www.instagram.com/so.aqsho/" class="">
               <i class="fa fa-instagram" aria-hidden="true"></i>
