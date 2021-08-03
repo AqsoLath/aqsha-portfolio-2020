@@ -112,7 +112,7 @@
       <div class="row text-center mb-2"><h2>My Projects</h2></div>
       <div class="row mt-3">
         <div class="col-lg-4 my-auto">
-          <div class="card  mx-auto mb-3" data-aos="fade-right">
+          <div class="card  mx-auto mb-3" data-aos="fade-right" data-aos-once="true">
             <img src="image/online-shop.png" class="card-img-top" alt="Online Store">
             <div class="card-body text-center">
               <h3 class="mb-3">Online Shop</h3>
@@ -123,14 +123,14 @@
         <div class="col-lg-4">
           <div class="row">
             <div class="col">
-                <div class="card  mx-auto mb-3 text-center" data-aos="fade-down">
+                <div class="card  mx-auto mb-3 text-center" data-aos="fade-down" data-aos-once="true">
                   <img src="image/personal.png" class="card-img-top" alt="Personal Website">
                   <div class="card-body">
                     <h3 class="mb-3">Personal Website</h3>
                     <a href="https://axolath.github.io/personal-website" class="tombol text-center ">Go here</a>
                   </div>
                 </div>
-                <div class="card  mx-auto text-center mb-3" data-aos="fade-up">
+                <div class="card  mx-auto text-center mb-3" data-aos="fade-up" data-aos-once="true">
                   <img src="image/dynamic.png" class="card-img-top" alt="Dynamic Website">
                   <div class="card-body">
                     <h3 class="mb-3">Dynamic Website</h3>
@@ -141,7 +141,7 @@
           </div>
         </div>
         <div class="col-lg-4 my-auto">
-          <div class="card  mx-auto text-center" data-aos="fade-left">
+          <div class="card  mx-auto text-center" data-aos="fade-left" data-aos-once="true">
             <img src="image/company.png" class="card-img-top" alt="Company Profile">
             <div class="card-body">
               <h3 class="mb-3">Company Profile</h3>
@@ -233,7 +233,9 @@ function topFunction() {
     </script>
     
     <script>
-      AOS.init();
+      AOS.init({
+         offset: 300,
+      });
     </script>
 
     <script type="text/javascript" src="script.js"></script>
