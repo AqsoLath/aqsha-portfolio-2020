@@ -8,7 +8,7 @@
 	--bg-black2: #1b1b1b;
 	--bg-black3: #242424;
 
-	--font-white1: #ffffffea;
+	--font-white1: #ffffffef;
 	--font-white2: #ffffffb9;
 	--font-white3: #ffffff72;
 
@@ -37,6 +37,20 @@ body{
 	background-color: var(--bg-black3);
 }
 
+.bahasa{
+	position: fixed;
+	left: 20px;
+	top: 100px;
+	z-index: 100;
+}
+
+#tombol-bahasa{
+	background-color: transparent;
+	border: 3px solid var(--pink);
+	color: var(--font-white1);
+	
+}
+
 .utama{
 	padding: 40px;
 	background-color: var(--bg-black1);
@@ -56,6 +70,7 @@ body{
 
 .utama h1{
 	font-family: var(--k2d);
+	font-size: 3rem;
 }
 
 .utama p{
@@ -98,6 +113,10 @@ body{
 
 .skills h3{
 	font-family: var(--k2d);
+}
+
+.skills img{
+	max-width: 100px;
 }
 
 hr{
@@ -196,6 +215,7 @@ ul li::before {
 	background-color: var(--pink);
 }
 
+
 .tengah {
 	display: flex;
 	justify-content: center;
@@ -236,7 +256,11 @@ ul li::before {
 }
 
 .contact .fa-whatsapp{
-	color: lightgreen;
+	/*color: 	#25D366;*/
+	color: #fff;
+	background-color: #25D366;
+	padding: 3px 6px;
+	border-radius: 25px ;
 }
 
 .contact-info{
@@ -245,9 +269,32 @@ ul li::before {
 	align-items: center;
 }
 
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: 3px solid var(--ungu); /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--bg-black2); /* Set a background color */
+  color: var(--pink); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 0; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+  height: 50px;
+  transition: 1s;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 footer{
 	background-color: var(--bg-black1);
-	margin-top: 50px;
+	margin-top: 20px;
 	padding-top: 20px;
 
 }
@@ -284,13 +331,38 @@ footer hr{
 	.contact .whatsapp{
 		font-size: 20px;
 	}
+
+	.contact .fa-whatsapp{
+		font-size: 2rem;
+	}
+
+	#myBtn{
+		bottom: 5px;
+		right: 10px;
+		padding: 0px;
+		width: 35px;
+		height: 35px;
+	}
 }
 
 @media (max-width: 992px){
+
+	.utama h1{
+		font-size: 1.8rem;
+	}
+
+	h2{
+		font-size: 2.2rem !important;
+	}
+
 	.logo{
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.skills img{
+		width: 100%;
 	}
 }
 
